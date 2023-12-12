@@ -3,6 +3,8 @@ public class Main {
 
         LinkedList l1 = new LinkedList();
 
+        l1.displayRev();
+
         System.out.println("size: " + l1.size());
 
         l1.insert(10);
@@ -13,6 +15,16 @@ public class Main {
         System.out.println("size: " + l1.size());
 
         l1.display();
+        l1.displayRev();
+
+        l1.displayRev(l1.getHead());
+        System.out.println();
+
+        System.out.println("After reversing");
+
+        l1.reverse();
+        l1.display();
+        l1.displayRev();
 
 
     }
